@@ -51,7 +51,7 @@
                                 <div class="dropdown">
                                     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"> <img src="images/option-icon.png" alt="img"> </button>
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                        <li> <a href="#" class="login-round"><i class="fa fa-sign-in"></i></a>
+                                        <li> <a href="#" class="login-round" data-toggle="modal" data-target="#myModal"><i class="fa fa-sign-in"></i></a>
                                             <p class="btn-login">Se connecter</p>
                                         </li>
                                         <li> <a href="#" class="login-round"><i class="fa fa-user-plus"></i></a>
@@ -94,11 +94,26 @@
                             <div class="container ">
                                 <div class="row ">
                                     <div class="col-md-4 col-sm-4 ">
-                                        <input type="text " placeholder="Metier ? "> </div>
+                                        <select name="countries" id="countries" class="icon-menu">
+                                            <option style="padding-left:0px;" value="">Select Metier ?</option>
+                                            <option style="url(../images/logo-plombier.png)" value="plombier">plombier</option>
+                                            <option value="electricite">electricien</option>
+                                            <option value="serrurerie">surrierie</option>
+                                            <option value="vitrerie">viterieure</option>
+                                        </select>
+                                    </div>
                                     <div class="col-md-4 col-sm-4 ">
-                                        <input type="text " placeholder="Où ? "> </div>
+                                        <select name="region" id="region">
+                                            <optgroup label="Région">
+                                                <option value="choisir">Où ?</option>
+                                                <option value="ile_de_france">Ile de France</option>
+                                                <option value="bretagne">Bretagne</option>
+                                                <option value="normandie">Normandie</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
                                     <div class="col-md-3 col-sm-3 ">
-                                        <input type="text " placeholder="&#xf02b; Some Input Text "> </div>
+                                        <input type="text " placeholder=""> </div>
                                     <div class="col-md-1 col-sm-1 ">
                                         <button type="submit "><i class="fa fa-search "></i></button>
                                     </div>
@@ -548,6 +563,41 @@
             </div>
         </div>
     </section>
+    <!-- Modal -->
+    <div class="modal fade col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-cell">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title text-center">Connexion</h4> </div>
+                <div class="panel-body">
+                    <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
+                    <form id="loginform" class="form-horizontal" role="form">
+                        <div class="input-group"> <span class="input-group-addon">
+                                <i class="fa fa-user"></i>
+                            </span>
+                            <input id="login-usermane" type="email" class="from-control" name="usermane" value="" placeholder="Email"> </div>
+                        <div class="input-group"> <span class="input-group-addon">
+                                <i class="fa fa-lock"></i>
+                            </span>
+                            <input id="login-password" type="password" class="from-control" name="password" value="" placeholder="mot de passe"> </div>
+                        <div class="input-group col-xs-12 text-center login-action">
+                            <div class="checkbox">
+                                <label>
+                                    <input id="login-remember" type="checkbox" name="remember" value="1" style="margin-top: 10px;"> Remember me &nbsp; <span id="btn-login">
+                                        <a href="#" class="btn btn-success"> connexion </a>
+                                    </span> </label>
+                            </div>
+                        </div>
+                        <div style="margin-top: 10px" class="form-group">
+                            <div class="col-sm-12 controls"></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Bootstrap Javascript -->
     <script src="js/jquery.js "></script>
     <script src="js/bootstrap.min.js "></script>

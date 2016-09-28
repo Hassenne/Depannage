@@ -173,11 +173,39 @@ p {
     overflow: hidden;
 }
 
+.modal-cell {
+    display: table-cell;
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+    padding: 50px;
+    background-color: rgba(256, 256, 256, 0.9);
+    box-sizing: border-box;
+    margin-bottom: 0;
+    box-shadow: 0px 0px 20px 1px black;
+    border-radius: 20px;
+    padding-top: 30px;
+}
+
+
+}
+#loginform .input-group[class*="col-"] {
+    float: left;
+}
+#loginform .input-group {
+    margin-bottom: 25px;
+}
+#btn-login {
+    border-left: 1px solid #aaa;
+}
+#btn-login .btn {
+    margin-left: 10px;
+}
 
 /*========= Header ============*/
-
 .header {
     /*    background-image: url("../images/1.jpg");*/
+    
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -186,7 +214,6 @@ p {
     -o-background-size: cover;
     -webkit-background-size: cover;
 }
-
 .header-container {
     height: auto;
     position: absolute;
@@ -196,7 +223,6 @@ p {
     left: 0;
     background: #fff;
 }
-
 .video-container {
     /*
     position: absolute;
@@ -208,6 +234,7 @@ p {
     width: 100%;
     overflow: hidden;
 */
+    
     bottom: 0;
     left: 0;
     overflow: hidden;
@@ -215,14 +242,12 @@ p {
     right: 0;
     top: 0;
 }
-
 .video-container video {
     position: absolute;
     opacity: 1;
     width: 100%;
     height: auto;
 }
-
 .video-bg {
     width: 100% !important;
     padding: 0 !important;
@@ -230,25 +255,20 @@ p {
     position: relative;
 }
 
-
 /****** video ********/
-
 .homepage-hero-module {
     border-right: none;
     border-left: none;
     position: relative;
 }
-
 .no-video .video-container video,
 .touch .video-container video {
     display: none;
 }
-
 .no-video .video-container .poster,
 .touch .video-container .poster {
     display: block !important;
 }
-
 .video-container {
     position: relative;
     bottom: 0%;
@@ -258,20 +278,17 @@ p {
     overflow: hidden;
     background: #000;
 }
-
 .video-container .poster img {
     width: 100%;
     bottom: 0;
     position: absolute;
 }
-
 .video-container .filter {
     z-index: 100;
     position: absolute;
     background: rgba(0, 0, 0, 0.4);
     width: 100%;
 }
-
 .video-container .title-container {
     z-index: 1000;
     position: absolute;
@@ -280,13 +297,11 @@ p {
     text-align: center;
     color: #fff;
 }
-
 .video-container .description .inner {
     font-size: 1em;
     width: 45%;
     margin: 0 auto;
 }
-
 .video-container .link {
     position: absolute;
     bottom: 3em;
@@ -296,24 +311,19 @@ p {
     font-size: 2em;
     color: #fff;
 }
-
 .video-container .link a {
     color: #fff;
 }
-
 .video-container video {
     position: absolute;
     z-index: 0;
     bottom: 0;
 }
-
 .video-container video.fillWidth {
     width: 100%;
 }
 
-
 /******  fin video ***************/
-
 video {
     /*
     position: absolute;
@@ -322,17 +332,16 @@ video {
     width: 100%;
 */
 }
-
 .header-overlay .search-form {
     width: 100%;
     border: 0;
     position: absolute;
     bottom: 0;
 }
-
 .header-overlay {
     /*background-color: rgba(31, 31, 31, 0.70);*/
     /*    padding-bottom: 220px;*/
+    
     position: absolute;
     top: 0;
     bottom: 0;
@@ -340,35 +349,28 @@ video {
     right: 0;
     height: auto;
 }
-
 logo {
     padding-bottom: 80px;
 }
-
 .caption .container {
     width: 100%;
     margin-top: 4px;
 }
 
-
 /*search*/
 
-
 /*** STYLES ***/
-
 .cntr {
     display: table;
     width: 100%;
     height: 100%;
     margin-top: 50px;
 }
-
 .cntr .cntr-innr {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
 }
-
 .search {
     display: inline-block;
     position: relative;
@@ -382,7 +384,6 @@ logo {
     transition: all 200ms ease;
     cursor: text;
 }
-
 .search:after {
     content: "";
     position: absolute;
@@ -395,18 +396,15 @@ logo {
     transform: rotate(-45deg);
     transition: all 200ms ease;
 }
-
 .search.active,
 .search:hover {
     width: 396px;
     margin-right: 0px;
 }
-
 .search.active:after,
 .search:hover:after {
     height: 0px;
 }
-
 .search input {
     width: 100%;
     border: none;
@@ -417,7 +415,6 @@ logo {
     background: transparent;
     outline-width: 0px;
 }
-
 #search-main {
     background: rgba(255, 255, 255, 0.2);
     position: relative;
@@ -433,24 +430,20 @@ logo {
     border: 0;
     clip: rect(0, 0, 0, 0);
 }
-
 .comp.search-bar-wrapper {
     padding-top: 0;
 }
-
 .search-bar-wrapper {
     display: table-cell;
     padding-top: 8px;
     width: 472px;
 }
-
 .comp {
     height: 61px;
     line-height: 61px;
     border-left: 1px solid #dce0e0;
     position: relative;
 }
-
 .comp.search-bar-wrapper input {
     height: auto;
     width: 100%;
@@ -461,12 +454,10 @@ logo {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-
 #search-main:hover {
     cursor: text;
     background: rgba(255, 255, 255, 0.24);
 }
-
 .holder form input {
     /*
     padding: 0 14px;
@@ -480,6 +471,7 @@ height: 34px;
 min-height: 34px;
 line-height: 34px;
 */
+    
     float: left;
     width: 100%;
     background: #fff;
@@ -496,7 +488,23 @@ line-height: 34px;
     font: 400 14px 'Roboto', sans-serif;
     color: #777
 }
-
+.holder form select {
+    float: left;
+    width: 100%;
+    background: #fff;
+    border: 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    height: 45px;
+    border-radius: 3px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+    font: 400 14px 'Roboto', sans-serif;
+    color: #777
+}
 .holder form button {
     color: #1b8af3;
     float: left;
@@ -514,15 +522,12 @@ line-height: 34px;
     -moz-transition: all 0.5s ease 0s;
     -o-transition: all 0.5s ease 0s;
 }
-
 .holder form button:hover {
     background-color: #1b8af3;
     color: #fff;
 }
 
-
 /*****  search principale *****/
-
 .waves-effect {
     position: relative;
     cursor: pointer;
@@ -537,7 +542,6 @@ line-height: 34px;
     tap-highlight-color: transparent;
     -webkit-tap-highlight-color: transparent;
 }
-
 .form1 {
     float: left;
     width: 100%;
@@ -552,13 +556,11 @@ line-height: 34px;
     -moz-box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
     -webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
 }
-
 .caption .holder {
     width: 100%;
     margin: 0 auto;
     display: block;
 }
-
 textarea,
 input {
     padding: 10px;
@@ -567,10 +569,25 @@ input {
     font-weight: normal;
     text-decoration: inherit;
 }
-
+select.icon-menu option {
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    padding-left: 30px;
+}
+.holder form select#countries option[value="plombier"] {
+    background-image: url("../images/logo-plombier.png");
+}
+.holder form select#countries option[value="electricite"] {
+    background-image: url("../images/logo_electricite.png");
+}
+.holder form select#countries option[value="serrurerie"] {
+    background-image: url("../images/logo-serrurerie.png");
+}
+.holder form select#countries option[value="vitrerie"] {
+    background-image: url("../images/logo-vitrerie.png");
+}
 
 /********/
-
 .header-text h1 {
     color: #fff;
     font-size: 50 px;
@@ -579,19 +596,16 @@ input {
     padding-top: 100px;
     text-transform: uppercase;
 }
-
 .header-text p {
     color: #fff;
     font-size: 25px;
     line-height: 35px;
     font-weight: 300;
 }
-
 .header-btns {
     margin-top: 100px;
     margin-bottom: 100px;
 }
-
 .btn-download,
 .btn-download:focus,
 .btn-download:active,
@@ -610,12 +624,10 @@ input {
     -webkit-transition: all 1s;
     -o-transition: all 1s;
 }
-
 .btn-download:hover {
     background-color: #129CF3;
     color: #fff;
 }
-
 .btn-tour,
 .btn-tour:focus,
 .btn-tour:active,
@@ -631,34 +643,29 @@ input {
     -webkit-transition: all 1s;
     -o-transition: all 1s;
 }
-
 .btn-tour:hover {
     color: #fff;
 }
-
 .btn-tour i {
     font-size: 25px;
     padding-left: 5px;
     color: #129CF3;
 }
-
 .header-iphone img {
     width: 100%;
     margin-top: 100px;
 }
 
-
 /*icons job*/
-
 .TopjobContainer {
     position: absolute;
     top: 10px;
     /* width: 100%; */
     /* height: 98px; */
     /* padding: 0 30px 0 30px; */
+    
     padding: 10px 10px 0px 275px;
 }
-
 .topJob {
     border-radius: 3px;
     font-size: 14px;
@@ -666,7 +673,6 @@ input {
     float: left;
     padding: 50px 15px 75px 15px;
 }
-
 .topJobIcon {
     background-repeat: no-repeat;
     background-position: center;
@@ -677,28 +683,23 @@ input {
     height: 100px;
     position: relative;
 }
-
 .topJob .topJobIcon {
     transition: all 0.2s ease-in-out;
 }
-
 .bc-bckground-plombier {
     /*background-color: #443399;*/
+    
     background-image: url("../images/logo-plombier.png");
 }
-
 .bc-bckground-electrecien {
     background-image: url("../images/logo_electricite.png");
 }
-
 .bc-bckground-vetrerie {
     background-image: url("../images/logo-vitrerie.png");
 }
-
 .bc-bckground-serrurerie {
     background-image: url("../images/logo-serrurerie.png");
 }
-
 .topJob:hover .topJobIcon {
     transition: all 0.12s ease-in-out;
     transform: scale(1.08) translate(0, -10px);
@@ -708,22 +709,17 @@ input {
     cursor: pointer;
 }
 
-
 /*============ About Us  ==============*/
-
 .choose-us-wraper {
     padding-top: 50px;
 }
-
 .about-iphone img {
     margin-top: 8px;
     height: 750px;
 }
-
 .choose-us-title {
     padding-bottom: 50px;
 }
-
 .choose-us-title h2 {
     text-transform: uppercase;
     font-weight: 800;
@@ -731,7 +727,6 @@ input {
     line-height: 37px;
     position: relative;
 }
-
 .choose-us-title h2:after {
     content: "";
     position: absolute;
@@ -741,25 +736,21 @@ input {
     height: 1px;
     background-color: #129CF3;
 }
-
 .choose-us-title p {
     margin-top: 40px;
     font-size: 19px;
     line-height: 24px;
 }
-
 .choose-us-item {
     position: relative;
     padding-bottom: 4px;
     padding-left: 80px;
 }
-
 .choose-use-item div {
     position: absolute;
     top: 0;
     left: 0;
 }
-
 .choose-us-item div i {
     font-size: 55px;
     color: #129CF3;
@@ -768,22 +759,18 @@ input {
     -o-transition: all 1s;
     -moz-transition: all 1s;
 }
-
 .choose-us-item h3 {
     color: #343434;
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 800;
 }
-
 .choose-us-item p {
     color: #727272;
     font-size: 15px;
 }
 
-
 /*============ Testimonials  ==============*/
-
 .testimonial {
     background-image: url("../images/testimonial-bg.png");
     background-attachment: fixed;
@@ -794,27 +781,22 @@ input {
     -webkit-background-size: cover;
     background-position: 50% 50%;
 }
-
 .testimonial-overlay {
     background-color: rgba(31, 31, 31, .75);
     padding-top: 30px;
     padding-bottom: 0px;
 }
-
 carousel-indicators {
     bottom: -10px;
 }
-
 .carousel-inner .item img {
     border: 2px solid #129CF3;
     border-radius: 50%;
     padding: 3px;
 }
-
 .testimonial-caption {
     padding-bottom: 70px;
 }
-
 .testimonial-caption h2 {
     color: #129CF3;
     text-transform: uppercase;
@@ -822,17 +804,14 @@ carousel-indicators {
     font-size: 30px;
     margin-top: 25px;
 }
-
 .testimonial-caption h4 {
     color: #129CF3;
 }
-
 .testimonial-caption h4 span {
     color: #D8D8D8;
     font-style: italic;
     font-weight: 300;
 }
-
 .testimonial-caption p {
     color: #D8D8D8;
     font-size: 18px;
@@ -840,14 +819,11 @@ carousel-indicators {
     padding-top: 50px;
 }
 
-
 /*============ Features  ==============*/
-
 .features-inner-wrapper {
     padding-top: 30px;
     padding-bottom: 70px;
 }
-
 .left-features-item {
     position: relative;
     padding-right: 90px;
@@ -855,7 +831,6 @@ carousel-indicators {
     text-align: right;
     margin-top: 35px;
 }
-
 .left-feature-item-icon {
     position: absolute;
     right: 0;
@@ -866,7 +841,6 @@ carousel-indicators {
     height: 90px;
     text-align: center;
 }
-
 .left-features-item h3 {
     text-transform: uppercase;
     font-s*25px;
@@ -874,18 +848,15 @@ carousel-indicators {
     margin-bottom: 21px;
     color: #333;
 }
-
 .left-features-item p {
     color: #333;
     font-size: 16px;
     font-weight: 300;
     line-height: 28px;
 }
-
 .feature-iphone img {
     width: 100%;
 }
-
 .right-feature-item {
     position: relative;
     padding-left: 90px;
@@ -893,7 +864,6 @@ carousel-indicators {
     margin-top: 35px;
     text-align: left;
 }
-
 .right-feature-item-icon {
     position: absolute;
     left: 0;
@@ -904,7 +874,6 @@ carousel-indicators {
     height: 90px;
     text-align: center;
 }
-
 .right-feature-item h3 {
     text-transform: uppercase;
     font-size: 25px;
@@ -912,7 +881,6 @@ carousel-indicators {
     margin-bottom: 21px;
     color: #333;
 }
-
 .right-feature-item p {
     color: #333;
     font-size: 16px;
@@ -920,9 +888,7 @@ carousel-indicators {
     line-height: 28px;
 }
 
-
 /*============ Purchase-Now  ==============*/
-
 .pruchase-now {
     background-color: #1a1a1a;
     padding-top: 20px;
@@ -930,13 +896,11 @@ carousel-indicators {
     margin-top: 20px;
     text-align: center;
 }
-
 .pruchase-now p {
     color: #dfdfdf;
     font-size: 18px;
     font-weight: 300;
 }
-
 .btn-pruchase-now,
 .btn-pruchase-now:active,
 .btn-pruchase-now:focus,
@@ -952,15 +916,12 @@ carousel-indicators {
     -o-transition: all 1s;
     -webkit-transition: all 1s;
 }
-
 .btn-pruchase-now:hover {
     background-color: #1274B1;
     border-color: #316B90;
 }
 
-
 /*============ Counter  ==============*/
-
 .counter {
     background-image: url(../images/counter-bg.png);
     background-repeat: no-repeat;
@@ -971,18 +932,15 @@ carousel-indicators {
     -webkit-background-size: cover;
     background-position: 50% 50%;
 }
-
 .counter-overlay {
     padding-top: 30px;
     padding-bottom: 15px;
     background: rgba(0, 0, 0, .4);
 }
-
 .counter-item i {
     color: #129CF3;
     font-size: 60px;
 }
-
 .counter-item h2 {
     font-family: "Source Sans Pro", sans-serif;
     color: #D7DADB;
@@ -992,7 +950,6 @@ carousel-indicators {
     margin-top: 15px;
     margin-bottom: 1px;
 }
-
 .counter-item p {
     color: #D7DADB;
     font-size: 20px;
@@ -1002,37 +959,29 @@ carousel-indicators {
     font-family: "Source Sans Pro", sans-serif;
 }
 
-
 /*============ Download Now  ==============*/
-
 .download-now img {
     margin-bottom: 32px;
 }
-
 .available-on {
     background-color: #1a1a1a;
     margin-top: -8px;
     position: relative;
 }
-
 .available-title {
     padding-top: 75px;
 }
-
 .available-title h2 {
     color: #fff;
     font-size: 30px;
 }
-
 .available-title p {
     color: #B5B5B5;
 }
-
 .no-padding {
     padding-left: 0;
     padding-right: 0;
 }
-
 .available-on-item {
     text-align: center;
     border-left: 1px solid #0F1217;
@@ -1044,11 +993,9 @@ carousel-indicators {
     -o-transition: all 1s;
     -webkit-transition: all 1s;
 }
-
 .available-on-item:hover {
     background-color: #121212;
 }
-
 .available-on-item i {
     color: #129CF3;
     text-align: center;
@@ -1060,11 +1007,9 @@ carousel-indicators {
     -o-transition: all 1s;
     -webkit-transition: all 1s;
 }
-
 .available-on-item:hover i {
     opacity: 0;
 }
-
 .available-on-inner {
     position: absolute;
     bottom: 93px;
@@ -1075,21 +1020,17 @@ carousel-indicators {
     -o-transition: all 1s;
     -webkit-transition: all 1s;
 }
-
 ..available-on-inner h2 {
     text-align: center;
     font-weight: 300;
     color: #D7DADB;
     font-size: 16px;
 }
-
 .available-on-item:hover div.available-on-inner {
     opacity: 1;
 }
 
-
 /*============ Contact US  ==============*/
-
 .contact-us-form .form-control {
     display: block;
     width: 100%;
@@ -1109,12 +1050,10 @@ carousel-indicators {
     -o-transition: all 1s;
     -webkit-transition: all 1s;
 }
-
 #message {
     height: 117px;
     resize: none;
 }
-
 .submit-btn,
 .submit-btn:active,
 .submit-btn:focus,
@@ -1133,30 +1072,25 @@ carousel-indicators {
     -o-transition: all 1s;
     -webkit-transition: all 1s;
 }
-
 .submit-btn:hover {
     background: #129CF3;
     color: #fff;
     border-color: #129CF3;
 }
-
 .social-icons {
     padding-top: 50px;
     padding-bottom: 70px;
 }
-
 .social-icons {
     margin: 0;
     padding: 0;
     text-align: center;
 }
-
 .social-icons ul li {
     list-style: none;
     display: inline;
     padding-left: 10px;
 }
-
 .social-icons ul li a {
     text-decoration: none;
     display: inline-block;
@@ -1172,52 +1106,42 @@ carousel-indicators {
     -o-transition: all 1s;
     -webkit-transition: all 1s;
 }
-
 .social-icons ul li a:hover {
     background-color: #129CF3;
     border: 1px solid #129CF3;
     color: #fff;
 }
-
 .social-icons ul li a i {
     font-size: 20px;
 }
 
-
 /*============ Footer  ==============*/
-
 .footer {
     background-color: #1a1a1a;
     padding-bottom: 35px;
     padding-top: 35px;
     border-bottom: 3px solid #129CF3;
 }
-
 #copyright {
     width: 50%;
 }
-
 #copyright p {
     color: #8C8B8A;
     font-weight: 600;
     font-size: 15px;
     text-transform: uppercase;
 }
-
 #copyright p a {
     text-decoration: none;
     color: #129CF3;
 }
-
 .scroll-top {
     text-align: right;
 }
-
 .scroll-top a {
     background-color: #129CF3;
     padding: 25px;
 }
-
 .scroll-top a i {
     color: #fff;
     font-size: 25px;
