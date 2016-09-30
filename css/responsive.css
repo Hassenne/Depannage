@@ -1,33 +1,42 @@
 /* xSmall Devices */
-@media only screen and (max-width: 738px){
-       .TopjobContainer {
-    position: absolute;
-    top: -90px;
-    padding: 0px 0px 0px 10px !important;
-}
+
+@media only screen and (max-width: 738px) {
+    .TopjobContainer {
+        position: absolute;
+        top: -90px;
+        padding: 0px 0px 0px 10px !important;
+    }
+    .holder form select {
+        margin-bottom: 14px;
+    }
+    .holder form input {
+        margin-bottom: 14px;
+    }
+    .holder form button {
+        margin-bottom: 14px;
+    }
 }
 
+
 /* Small Devices */
-@media only screen and (max-width: 767px){
+
+@media only screen and (max-width: 767px) {
     .navbar-default {
-        
         background-color: #fff !important;
-        border-color: #e6e6e6e6;  
+        border-color: #e6e6e6e6;
     }
-    
     .search.active,
     .search:hover {
         width: 250px;
         margin-right: 0px;
     }
-    
     .topJob {
-    font-size: 14px;
-    text-shadow: rgba(0, 0, 0, 0.2) 0px 1px 1px;
-    float: left;
-    border-radius: 3px;
-    padding: 50px 15px 75px;
-}
+        font-size: 14px;
+        text-shadow: rgba(0, 0, 0, 0.2) 0px 1px 1px;
+        float: left;
+        border-radius: 3px;
+        padding: 50px 15px 75px;
+    }
     .about-iphone img {
         width: 100%;
     }
@@ -36,28 +45,31 @@
         padding-top: 50px;
     }
 }
+
+
 /* Small Devices and Tablettes */
-@media only screen and (max-width: 768px){
-    
+
+@media only screen and (max-width: 768px) {
     .header-iphone {
         display: none;
     }
-    .header-text, .header-btns {
+    .header-text,
+    .header-btns {
         text-align: center;
     }
-        
     .TopjobContainer {
-    position: absolute;
-    top: -90px;
-    padding: 0px 0px 0px 166px;
+        position: absolute;
+        top: -90px;
+        padding: 0px 0px 0px 166px;
+    }
 }
-    
-}
+
+
 /* Small Devices ,  Desktops */
-@media only screen and (max-width: 992px){
-    
-}
+
+@media only screen and (max-width: 992px) {}
+
+
 /* Small Devices ; wite Screen  */
-@media only screen and (max-width: 1200px){
-    
-}
+
+@media only screen and (max-width: 1200px) {}

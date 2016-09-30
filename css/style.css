@@ -21,6 +21,10 @@ p {
     line-height: 21px;
 }
 
+.no-padding {
+    padding: 0 !important;
+}
+
 
 /*====== Generic CSS ========*/
 
@@ -174,16 +178,17 @@ p {
 }
 
 .modal-cell {
-    display: table-cell;
+    display: block;
     height: 100%;
     width: 100%;
     vertical-align: middle;
     padding: 50px;
-    background-color: rgba(256, 256, 256, 0.9);
+    /*    background-color: rgba(256, 256, 256, 0.9);*/
+    background-color: #fff;
     box-sizing: border-box;
     margin-bottom: 0;
-    box-shadow: 0px 0px 20px 1px black;
-    border-radius: 20px;
+    /*    box-shadow: 0px 0px 20px 1px #fff;*/
+    border-radius: 5px;
     padding-top: 30px;
 }
 
@@ -353,8 +358,13 @@ logo {
     padding-bottom: 80px;
 }
 .caption .container {
+    /*
     width: 100%;
     margin-top: 4px;
+*/
+}
+.caption {
+    background-color: rgba(31, 31, 31, 0.70):
 }
 
 /*search*/
@@ -542,6 +552,9 @@ line-height: 34px;
     tap-highlight-color: transparent;
     -webkit-tap-highlight-color: transparent;
 }
+.modal {
+    top: 153px !important;
+}
 .form1 {
     float: left;
     width: 100%;
@@ -568,6 +581,12 @@ input {
     font-style: normal;
     font-weight: normal;
     text-decoration: inherit;
+}
+#login-usermane {
+    width: 100%;
+}
+#login-password {
+    width: 100%;
 }
 select.icon-menu option {
     background-repeat: no-repeat;
